@@ -9,3 +9,18 @@ table{
     border-collapse: collapse;
     border: 1px solid green;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#err{
+    color: red;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,5 @@
-root = document.getElementById('root')
-
+const root = document.getElementById('root')
+const err = document.getElementById('err')
 const table = document.createElement('table')
 let count = 0
 for(i=0;i<3;i++){
@@ -12,12 +12,26 @@ for(i=0;i<3;i++){
         tr.appendChild(td)
         td.addEventListener('click',()=>{
             if(count % 2 === 0){
-
-                td.innerText = 'X'
+                if(td.innerText ==='X' ||td.innerText ==='O'){
+                    err.innerText = 'place Somewhere'
+                }else{
+                    err.innerText = ''
+                    td.innerText = 'X'
+                   
+                    count++ 
+                }
+               
             }else{
-               td.innerText = 'O'
+                if(td.innerText ==='X' ||td.innerText ==='O'){
+                    err.innerText = 'place Somewhere'
+                }else{
+                    err.innerText = ''
+                    td.innerText = 'O'
+                    
+                    count++
+                }
             }
-          count++  
+           
         })
 
     }
