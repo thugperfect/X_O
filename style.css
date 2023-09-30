@@ -47,5 +47,29 @@ body{
   #err{
     width: 300px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+   
 
+  }
+  .red{
+    color: red;
+  }
+
+  .blue{
+    color: skyblue;
+  }
+  .green{
+    color: green;
+  }
+  #ab{
+    width: 350px;
+    height: 200px;
+ 
+    background-color: antiquewhite;
+    position: fixed;
+    transform: translate(50%, 50%) scale(0);
+    transition: 3000ms ease-in-out;
   }
