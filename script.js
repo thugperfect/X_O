@@ -40,8 +40,7 @@ const click = (e) => {
    
       count++;
       if(x){
-        comp.style.display = 'block'
-        
+       
         showWin('X wins')
         
       }
@@ -59,8 +58,7 @@ const click = (e) => {
       const o = validate(pattern,oArr)
 
       if(o){
-        err.classList.add('green')
-        err.innerText = 'O wins ... '
+       showWin('O wins')
       }
       count++;
     }
@@ -77,6 +75,15 @@ const showWin =(p)=>{
   const innerDiv = document.createElement('div')
   innerDiv.className = 'abs-in'
   innerDiv.innerHTML = p
+  const reload = document.createElement('button')
+  reload.innerText = 'Replay'
+  
+  
+  innerDiv.appendChild(reload)
   div.appendChild(innerDiv)
   body[0].appendChild(div)
+
+  reload.addEventListener('click',()=>{
+    window.location.reload()
+  })
 }
