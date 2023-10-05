@@ -41,8 +41,8 @@ const click = (e) => {
       count++;
       if(x){
         comp.style.display = 'block'
-        err.innerHTML = "X wins..."
-        showWin()
+        
+        showWin('X wins')
         
       }
     }
@@ -70,12 +70,10 @@ const grid = document.getElementsByClassName("grid-item");
 for (i = 0; i < grid.length; i++) {
   grid[i].addEventListener("click", click);
 }
-const showWin =()=>{
+const body = document.getElementsByTagName('body')
+const showWin =(p)=>{
   const div= document.createElement('div')
   div.className = 'abs'
-  div.innerHTML = 'asjiibdabcibdaoicnduivbciudnbcvdiubci cuicbdauicvuiadbcuiadbuicbadiubcic'
-  div.style.width="200px"
-  div.style.height= '200px'
-  div.style.backgroundColor = 'green'
-  root.appendChild(div)
+  div.innerHTML = p
+  body[0].appendChild(div)
 }

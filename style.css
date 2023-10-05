@@ -4,6 +4,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0%;
+    min-height: 100vh;
 }
 .grid-container {
     display: grid;
@@ -54,6 +56,12 @@ body{
    
 
   }
+  #root{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .red{
     color: red;
   }
@@ -64,12 +72,10 @@ body{
   .green{
     color: green;
   }
-  #ab{
-    width: 350px;
-    height: 200px;
- 
-    background-color: antiquewhite;
-    position: fixed;
-    transform: translate(50%, 50%) scale(0);
-    transition: 3000ms ease-in-out;
+
+  .abs{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
   }
