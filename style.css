@@ -78,4 +78,17 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .abs-in{
+    width: 350px;
+    height:200px;
+    background-color: beige;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

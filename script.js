@@ -74,6 +74,9 @@ const body = document.getElementsByTagName('body')
 const showWin =(p)=>{
   const div= document.createElement('div')
   div.className = 'abs'
-  div.innerHTML = p
+  const innerDiv = document.createElement('div')
+  innerDiv.className = 'abs-in'
+  innerDiv.innerHTML = p
+  div.appendChild(innerDiv)
   body[0].appendChild(div)
 }
